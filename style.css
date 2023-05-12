@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bahnschrift Condensed;
+}
+header ul li a:hover{
+    color: rgb(27, 45, 251);
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    padding: 30px;
+}
+@media (max-width:450px){
+    header{
+        position: relative;
+    }
+}
+
+.logo{
+    position: relative;
+    padding-left: 10px;
+}
+.logo img{
+    position: relative;
+    z-index: 999;
+}
+.menu{
+    display: grid;
+    place-content: right;
+    position: relative;
+    justify-content: right;
+}
+.menu ul{
+    display: flex;
+    z-index: 999;
+}
+.menu ul li{
+    list-style: none;
+    margin: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: medium;
+    color: white;
+    text-transform: uppercase;
+}
+.menu .brands{
+    position: relative;
+}
+.menu .brands ul{
+   display: none !important;
+    position: absolute;
+    padding-top: 8px;
+    width: 280px;
+}
+.menu .brands:hover ul{
+    display: block !important;
+}
+.section1{
+    background-image: linear-gradient(
+        to bottom,
+        white 0%,
+        white 55%,
+        black 55%,
+        black 100%
+    );
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+    position: relative;
+}
+@media (max-width:400px){
+    .section1, .section2{
+        margin: 10px;
+        padding: 10px 10px;
+    }
+    .content{
+        width: 100%;
+    }
+}
+.section1 span{
+    padding-top: 40px;
+}
+.flavour{
+    font-size: 90px;
+    font-weight: 500;
+    font-family: Bahnschrift Condensed;
+}
+.section1 .card1{
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.section1 .card3{
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.section1 .card4{
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.section1 .card5{
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.section1 .card2{
+    height: 112.6%;
+    overflow: hidden;
+    position: relative;
+}
+.section1 .card1 .blank{
+    display: flex;
+    height: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.25s;
+}
+.section1 .card3 .blank{
+    display: flex;
+    height: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgb(214, 214, 181);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.25s;
+}
+.section1 .card4 .blank{
+    display: flex;
+    height: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgb(176, 230, 132);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.25s;
+}
+.section1 .card5 .blank{
+    display: flex;
+    height: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgb(52, 157, 192);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.25s;
+}
+.section1 .card2 .blank{
+    display: flex;
+    height: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgba(255, 166, 0, 0.81);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.25s;
+}
+.section1 .card1 .content1{
+    display: flex;
+    height: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.section1 .card3 .content1{
+    display: flex;
+    height: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgba(232, 63, 6, 0.879);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.section1 .card4 .content1{
+    display: flex;
+    height: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgb(128, 56, 8);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.section1 .card5 .content1{
+    display: flex;
+    height: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgb(208, 25, 202);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.section1 .card2 .content1{
+    display: flex;
+    height: 0px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: orangered;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+.section1 .card1 .content1 span{
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white !important;
+}
+.section1 .card3 .content1 span{
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white !important;
+}
+.section1 .card4 .content1 span{
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white !important;
+}
+.section1 .card5 .content1 span{
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white !important;
+}
+.section1 .card2 .content1 span{
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white !important;
+}
+.section1 .card1:hover{
+    cursor: pointer;
+}
+.section1 .card3:hover{
+    cursor: pointer;
+}
+.section1 .card4:hover{
+    cursor: pointer;
+}
+.section1 .card5:hover{
+    cursor: pointer;
+}
+.section1 .card2:hover{
+    cursor: pointer;
+}
+.section1 .card1:hover .blank{
+    height: 300px;
+    transform: translateY(-300px);
+    visibility: visible;
+}
+.section1 .card3:hover .blank{
+    height: 300px;
+    transform: translateY(-300px);
+    visibility: visible;
+}
+.section1 .card4:hover .blank{
+    height: 300px;
+    transform: translateY(-300px);
+    visibility: visible;
+}
+.section1 .card5:hover .blank{
+    height: 300px;
+    transform: translateY(-300px);
+    visibility: visible;
+}
+.section1 .card2:hover .blank{
+    height: 300px;
+    transform: translateY(-300px);
+    visibility: visible;
+}
+.section1 .card1:hover .content1{
+    height: 300px;
+    transform: translateY(-300px);
+    visibility: visible;
+    opacity: 1;
+}
+.section1 .card3:hover .content1{
+    height: 300px;
+    transform: translateY(-300px);
+    visibility: visible;
+    opacity: 1;
+}
+.section1 .card4:hover .content1{
+    height: 300px;
+    transform: translateY(-300px);
+    visibility: visible;
+    opacity: 1;
+}
+.section1 .card5:hover .content1{
+    height: 300px;
+    transform: translateY(-300px);
+    visibility: visible;
+    opacity: 1;
+}
+.section1 .card2:hover .content1{
+    height: 300px;
+    transform: translateY(-300px);
+    visibility: visible;
+    opacity: 1;
+}
+.section1 .card1 span{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Bahnschrift Condensed;
+    color: rgb(0, 0, 0);
+}
+.section1 .card2 span{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Bahnschrift Condensed;
+    color: rgb(0, 0, 0);
+}
+.section1 .card1 .span3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Bahnschrift Condensed;
+    color: white;
+}
+.play{
+    font-size: 80px;
+    font-weight: bolder;
+}
+.with{
+    font-size: 80px;
+    margin: 0px 10px;
+    font-family: 'Pacifico', cursive;
+}
+.f{
+    font-size: 80px;
+    margin-left: 5px;
+    font-weight: bolder;
+    color: red;
+}
+.l{
+    font-size: 80px;
+    font-weight: bolder;
+    color: orange;
+}
+.a{
+    font-size: 80px;
+    font-weight: bolder;
+    color: yellow;
+}
+.v{
+    font-size: 80px;
+    font-weight: bolder;
+    color: green;
+}
+.o{
+    font-size: 80px;
+    font-weight: bolder;
+    color: blue;
+}
+.r{
+    font-size: 80px;
+    font-weight: bolder;
+    color: indigo;
+}
+.s{
+    font-size: 80px;
+    font-weight: bolder;
+    color: violet;
+}
+.section2{
+    background-image: linear-gradient(
+        to bottom,
+        white 0%,
+        white 55%,
+        black 55%,
+        black 100%
+    );
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+    position: relative;
+}
+.upper_row{
+    padding: 50px 0px;
+}
+.snacks1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.snacks2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.snacks3{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.snacks4{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.buy a{
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    font-weight: bold;
+    font-family: Bahnschrift Condensed;
+}
+.snacks1:hover .buy{
+    transition: 1s;
+    opacity: 1;
+}
+.snacks2:hover .buy{
+    transition: 1s;
+    opacity: 1;
+}
+.snacks3:hover .buy{
+    transition: 1s;
+    opacity: 1;
+}
+.snacks4:hover .buy{
+    transition: 1s;
+    opacity: 1;
+}
+
+.bottom_row{
+    padding: 50px 0px;
+}
+.video{
+    margin: 50px 0px;
+}
+footer{
+    padding: 100px;
+}
+footer .company span{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Bahnschrift Condensed;
+    padding: 15px 0px;
+}
+footer .company a{
+    font-size: large;
+    font-weight: bold;
+    font-family: Bahnschrift Condensed;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0px;
+}
+footer .company a:hover{
+    color: orange;
+}
+
+
+
+
+
+
+
